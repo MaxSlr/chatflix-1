@@ -74,7 +74,7 @@ class Recommendation:
 
     # Pose une question à l'utilisateur
     def ask_question(self, user):
-        num_movies = len(self.movies_list)
+        num_movies = len(self.movies_list)-1
         rnd =randint(0,num_movies)
         movie = self.movies_list[rnd]
         return "Aimez vous" + self.movies[movie].title+" ?"
