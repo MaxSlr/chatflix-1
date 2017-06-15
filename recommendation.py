@@ -74,11 +74,10 @@ class Recommendation:
 
     # Pose une question à l'utilisateur
     def ask_question(self, user):
-        rnd =randint(0,1)
-        if (rnd==1):
-            return "Vous aimez Harry Potter ?"
-        else:
-            return "Vous aimez le Seigneur des anneaux ?"
+        num_movies = len(movies_list)
+        rnd =randint(0,num_movies)
+        movie = movies_list[rnd]
+        return "Aimez vous" + movies[movie]+" ?"
 
     # Calcule la similarité entre 2 utilisateurs
     @staticmethod
