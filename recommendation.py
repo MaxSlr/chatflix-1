@@ -77,7 +77,7 @@ class Recommendation:
         num_movies = len(self.movies_list)-1
         rnd =randint(0,num_movies)
         movie = self.movies_list[rnd]
-        return "Aimez vous" + self.movies[movie].title+" ?"
+        return "Aimez vous " + self.movies[movie].title+" ?"
 
     # Calcule la similarité entre 2 utilisateurs
     @staticmethod

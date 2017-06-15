@@ -46,10 +46,20 @@ class User:
         # Si on a rien demandé à l'utilisateur alors on ne fait rien
         if self.latest_movie_asked is None:
             return
+        else if (message=="oui"):
+            self.answer_yes()
+            print(self.good_ratings)
+        else if (message == "non"):
+            self.answer_no()
+            print(self.bad_ratings)
+        else:
+            self.answer_neutral()
+            print(self.neutral_ratings)
+
+
 
         # On enlève les espaces en trop et on met tout le message en miniscule
         clean_message = message.lower().strip()
-        self.latest_movie_asked = None
 
         # Il faut traiter ici le message
         return
