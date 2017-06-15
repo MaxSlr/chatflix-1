@@ -74,7 +74,7 @@ class Recommendation:
 
     # Pose une question à l'utilisateur
     def ask_question(self, user):
-        rnd =random.randint(0,1)
+        rnd =randint(0,1)
         if (rnd==1):
             return "Vous aimez Harry Potter ?"
         else:
